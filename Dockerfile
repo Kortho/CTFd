@@ -16,6 +16,8 @@ COPY requirements.txt /opt/CTFd/
 
 RUN pip install -r requirements.txt --no-cache-dir
 
+RUN pip3 install Werkzeug==0.16.0
+
 COPY . /opt/CTFd
 
 # hadolint ignore=SC2086
